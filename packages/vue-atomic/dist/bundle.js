@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("vue-atomic", [], factory);
+	else if(typeof exports === 'object')
+		exports["vue-atomic"] = factory();
+	else
+		root["vue-atomic"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -7220,7 +7230,14 @@ setTimeout(function () {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.test = test;
+
+exports.default = function () {
+  console.log('vue-atomic imported');
+
+  return {
+    test: test
+  };
+};
 
 var _vue = __webpack_require__(0);
 
@@ -7455,3 +7472,4 @@ module.exports = g;
 
 /***/ })
 /******/ ]);
+});
