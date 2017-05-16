@@ -1,0 +1,20 @@
+{
+  "name": "vue-atomic",
+  "version": "0.0.1",
+  "description": "VueJS app using Atomic Design Methodology",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "babel-preset-latest": "^6.24.1"
+  }
+}
