@@ -1,9 +1,9 @@
 {
   "name": "vue-atomic",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "VueJS app using Atomic Design Methodology",
+  "author": "Cole Morton <cole.morton@hotmail.com>",
   "main": "dist/bundle.js",
-  "private": true,
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "play": "vbuild dev --config play.config.js",
