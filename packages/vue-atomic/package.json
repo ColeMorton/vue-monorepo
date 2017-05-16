@@ -3,7 +3,7 @@
   "version": "0.0.5",
   "description": "VueJS app using Atomic Design Methodology",
   "author": "Cole Morton <cole.morton@hotmail.com>",
-  "main": "dist/bundle.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "play": "vbuild dev --config play.config.js",
@@ -13,7 +13,7 @@
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.4.0",
+    "babel-preset-latest": "^6.24.1",
     "vbuild": "^7.1.0",
     "vue-play": "^3.2.1",
     "webpack": "^2.5.1"
