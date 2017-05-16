@@ -1,6 +1,4 @@
-import { play } from 'vue-play'
+const load = requireContext => requireContext.keys().map(requireContext)
 
-play('MyButton')
-  .add('with text', {
-    template: `<button @click="$log('123')">Hello</button>`
-  })
+// load files which end with `.play.js` in `../src/components` folder
+load(require.context('../src/components', true, /.play.js$/))
