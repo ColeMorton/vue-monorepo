@@ -1,7 +1,7 @@
 {
   "name": "vue-sandbox",
   "description": "A Vue.js project",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Cole Morton <cole.morton@hotmail.com>",
   "private": true,
   "scripts": {
@@ -24,5 +24,9 @@
     "vue-template-compiler": "^2.2.1",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ColeMorton/vue-sandbox.git"
   }
 }

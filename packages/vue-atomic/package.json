@@ -1,6 +1,6 @@
 {
   "name": "vue-atomic",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "VueJS app using Atomic Design Methodology",
   "main": "dist/bundle.js",
   "private": true,
@@ -17,5 +17,9 @@
     "vbuild": "^7.1.0",
     "vue-play": "^3.2.1",
     "webpack": "^2.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ColeMorton/vue-atomic.git"
   }
 }
