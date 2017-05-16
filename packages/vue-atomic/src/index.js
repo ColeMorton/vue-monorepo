@@ -1,7 +1,9 @@
-const component = () => {
-  const element = document.createElement('div');
-  element.innerHTML = 'Hello Babel Latest!';
-  return element;
-}
+console.log('vue-atomic started');
 
-document.body.appendChild(component());
+import vue from 'vue';
+
+export function test() {
+  console.log('test');
+  console.log('vue loaded: ', vue)
+  return true;
+}
