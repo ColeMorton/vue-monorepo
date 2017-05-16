@@ -7,10 +7,6 @@ function test() {
   return true;
 }
 
-export default function() {
-  console.log('vue-atomic imported');
-
-  return {
-    test: test
-  }
+export default {
+  test: test
 }

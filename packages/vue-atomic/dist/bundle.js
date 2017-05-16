@@ -7231,14 +7231,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function () {
-  console.log('vue-atomic imported');
-
-  return {
-    test: test
-  };
-};
-
 var _vue = __webpack_require__(0);
 
 var _vue2 = _interopRequireDefault(_vue);
@@ -7252,6 +7244,10 @@ function test() {
   console.log('vue loaded: ', _vue2.default);
   return true;
 }
+
+exports.default = {
+  test: test
+};
 
 /***/ }),
 /* 2 */
