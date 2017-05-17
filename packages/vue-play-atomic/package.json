@@ -1,0 +1,19 @@
+{
+  "name": "vue-play-atomic",
+  "version": "0.0.6",
+  "description": "Play with your atomic components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "play": "vbuild dev --config play.config.js",
+    "build:play": "vbuild --config play.config.js"
+  },
+  "author": "Cole Morton <cole.morton@hotmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "vbuild": "^7.1.0",
+    "vue-atomic": "^0.0.6",
+    "vue-play": "^3.2.1"
+  },
+  "dependencies": {}
+}
