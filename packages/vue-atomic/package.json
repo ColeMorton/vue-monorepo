@@ -1,6 +1,6 @@
 {
   "name": "vue-atomic",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "VueJS app using Atomic Design Methodology",
   "author": "Cole Morton <cole.morton@hotmail.com>",
   "main": "index.js",
