@@ -4,8 +4,8 @@
   "description": "Play with your atomic components",
   "main": "index.js",
   "scripts": {
-    "play": "vbuild dev --config play.config.js",
-    "build:play": "vbuild --config play.config.js"
+    "play": "vbuild dev --config config.js",
+    "build:play": "vbuild --config config.js"
   },
   "author": "Cole Morton <cole.morton@hotmail.com>",
   "license": "ISC",
