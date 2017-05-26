@@ -3582,9 +3582,9 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-atomic@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/vue-atomic/-/vue-atomic-0.0.4.tgz#74f3c4871cf487cd1284e4f53384edae9d3bd09b"
+vue-atomic@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/vue-atomic/-/vue-atomic-0.0.7.tgz#8426bd6646976a082dff72e79a28a81c348c81ee"
 
 vue-hot-reload-api@^2.0.11:
   version "2.1.0"

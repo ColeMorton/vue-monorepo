@@ -22,7 +22,7 @@
 
 <script>
   import va from 'vue-atomic'
-  const { Box } = va;
+  const { Box } = va.components;
 
   export default {
     name: 'app',

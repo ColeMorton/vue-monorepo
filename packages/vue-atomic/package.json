@@ -5,17 +5,13 @@
   "author": "Cole Morton <cole.morton@hotmail.com>",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "play": "vbuild dev --config play.config.js",
-    "build:play": "vbuild --config play.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-latest": "^6.24.1",
-    "vbuild": "^7.1.0",
-    "vue-play": "^3.2.1",
     "webpack": "^2.5.1"
   },
   "repository": {
