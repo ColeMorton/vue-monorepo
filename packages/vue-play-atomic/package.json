@@ -14,5 +14,7 @@
     "vue-atomic": "^0.0.10",
     "vue-play": "^3.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "pug": "^2.0.0-rc.1"
+  }
 }

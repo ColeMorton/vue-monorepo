@@ -1,5 +1,6 @@
-<template>
-  <button class="button" :style="{color: color, borderColor: color}" @click="handleClick" :class="{rounded: rounded}"><slot></slot></button>
+<template lang="pug">
+div
+  h1 Hello world!
 </template>
 
 <script>
