@@ -1,6 +1,6 @@
 {
   "name": "vue-play-atomic",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Play with your atomic components",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "vbuild": "^7.1.0",
-    "vue-atomic": "^0.0.10",
+    "vue-atomic": "^0.0.11",
     "vue-play": "^3.2.1"
   },
   "dependencies": {
