@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import {play} from 'vue-play'
-import MyButton from './MyButton.vue'
+import MyButton from './index.vue'
 
 Vue.component('my-button', MyButton)
 

@@ -1,5 +1,5 @@
 import {play} from 'vue-play'
-import Box from './Box.vue'
+import Box from './index.vue'
 
 play(Box)
   .name('Box')
