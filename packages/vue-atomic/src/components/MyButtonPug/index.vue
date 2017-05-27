@@ -1,15 +1,20 @@
 <template lang="pug">
 div
-  h1 Hello world!
+  p Hello Worlds!
+  button.button(
+    v-bind:style='{ color: color, borderColor: color }'
+    v-bind:class='{rounded: rounded}'
+    @click='handleClick'
+  )
+    slot
+  //- <button class="button" :style="{color: color, borderColor: color}" @click="handleClick" :class="{rounded: rounded}"><slot></slot></button>
 </template>
 
 <script>
   export default {
     props: {
       rounded: Boolean,
-      handleClick: {
-        default: () => () => null
-      },
+      handleClick: () => console.log('clicked!'),
       color: {
         default: '#42b983'
       }
@@ -17,7 +22,7 @@ div
   }
 </script>
 
-<style>
+<style scoped>
   .button {
     border: 3px solid;
     padding: 10px 20px;
