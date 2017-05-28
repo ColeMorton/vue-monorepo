@@ -1,7 +1,7 @@
 <template lang="pug">
 button.button(
-  v-bind:style='{ color: color, borderColor: color, fontSize: fontSize }'
-  v-bind:class='{ rounded: rounded }'
+  :style='{ color: color, borderColor: color, fontSize: fontSize }'
+  :class='{ rounded: rounded }'
   @click='handleClick'
 )
   slot

@@ -1,10 +1,9 @@
-<template>
-  <div
-    class="box"
-    :class="{dashed: dashed, dotted: dotted}"
-    :style="{color: 'white', backgroundColor: color}">
-    <slot></slot>
-  </div>
+<template lang='pug'>
+div.box(
+  :class='{dashed: dashed, dotted: dotted}'
+  :style='{backgroundColor: color}'
+)
+  slot
 </template>
 
 <script>
@@ -13,7 +12,7 @@
   }
 </script>
 
-<style scoped>
+<style lang='css' scoped>
   .box {
     width: 80px;
     height: 80px;
@@ -21,11 +20,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &.dashed {
-      border-style: dashed;
-    }
-    &.dotted {
-      border-style: dotted;
-    }
+    color: white;
+  }
+  .box.dashed {
+    border-style: dashed;
+  }
+  .box.dotted {
+    border-style: dotted;
   }
 </style>
