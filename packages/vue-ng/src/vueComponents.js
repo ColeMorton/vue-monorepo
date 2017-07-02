@@ -4,7 +4,6 @@ import helloComponent from './components/helloComponent.js'
 import components from './components'
 import { capitalizeFirstLetter } from './lib'
 import va from 'vue-atomic'
-
 console.log('va', va)
 
 const MODULE_NAME = 'vue.components'
