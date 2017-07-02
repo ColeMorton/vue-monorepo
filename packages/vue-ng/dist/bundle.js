@@ -391,14 +391,24 @@ var _vue = __webpack_require__(10);
 
 var _vue2 = _interopRequireDefault(_vue);
 
+var _vueAtomic = __webpack_require__(26);
+
+var _vueAtomic2 = _interopRequireDefault(_vueAtomic);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log('va', _vueAtomic2.default);
+var MyButton = _vueAtomic2.default.components.MyButton;
 
 exports.default = _vue2.default.component('hello-component', {
   props: {
     name: String
   },
+  components: {
+    'my-button': MyButton
+  },
   render: function render(h) {
-    var tag = 'h2';
+    var tag = 'my-button';
     var props = {
       class: ['salmon'],
       style: { cursor: 'pointer' },
@@ -7999,13 +8009,7 @@ var _components2 = _interopRequireDefault(_components);
 
 var _lib = __webpack_require__(1);
 
-var _vueAtomic = __webpack_require__(26);
-
-var _vueAtomic2 = _interopRequireDefault(_vueAtomic);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-console.log('va', _vueAtomic2.default);
 
 var MODULE_NAME = 'vue.components';
 
