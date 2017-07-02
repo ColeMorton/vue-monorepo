@@ -1,6 +1,6 @@
 {
   "name": "vue-play-atomic",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Play with your atomic components",
   "main": "index.js",
   "scripts": {
