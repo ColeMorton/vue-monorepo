@@ -60,14 +60,14 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(5);
+__webpack_require__(7);
 module.exports = angular;
 
 
@@ -7214,7 +7214,7 @@ setTimeout(function () {
 
 /* harmony default export */ __webpack_exports__["default"] = (Vue$3);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(8), __webpack_require__(9)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(10), __webpack_require__(11)))
 
 /***/ }),
 /* 2 */
@@ -7258,14 +7258,26 @@ const capitalizeFirstLetter = (string) => {
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: /Users/colemorton/Sites/vue-monorepo/packages/vue-atomic/src/components/Box/index.vue Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <template lang='pug'>\n| div.box(\n|   :class='{dashed: dashed, dotted: dotted}'");
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: /Users/colemorton/Sites/vue-monorepo/packages/vue-atomic/src/components/MyButton/index.vue Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <template lang=\"pug\">\n| button.button(\n|   :style='{ color: color, borderColor: color, fontSize: fontSize }'");
+
+/***/ }),
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vueComponents__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controllers__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vueComponents__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controllers__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controllers___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__controllers__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib__ = __webpack_require__(3);
 
@@ -7286,7 +7298,7 @@ Object.keys(__WEBPACK_IMPORTED_MODULE_2__controllers___default.a).forEach((key) 
 })
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports) {
 
 /**
@@ -40663,23 +40675,28 @@ $provide.value("$locale", {
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ngVue__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ngVue__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ngVue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_ngVue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angular__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_helloComponent_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_atomic__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_atomic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vue_atomic__);
 
 
 
 
 
+
+
+console.log('va', __WEBPACK_IMPORTED_MODULE_5_vue_atomic___default.a)
 
 const MODULE_NAME = 'vue.components'
 
@@ -40696,7 +40713,7 @@ Object.keys(__WEBPACK_IMPORTED_MODULE_3__components___default.a).forEach((key) =
 /* unused harmony default export */ var _unused_webpack_default_export = ('vue.components');
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(global, factory) {
@@ -40880,7 +40897,7 @@ Object.keys(__WEBPACK_IMPORTED_MODULE_3__components___default.a).forEach((key) =
 
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -41070,7 +41087,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports) {
 
 var g;
@@ -41097,10 +41114,10 @@ module.exports = g;
 
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const req = __webpack_require__(11)
+const req = __webpack_require__(13)
 
 req.keys().forEach((key) => {
   const name = key.replace(/^\.\/([^.]+)\.js$/, '$1')
@@ -41109,7 +41126,7 @@ req.keys().forEach((key) => {
 
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -41129,26 +41146,57 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 11;
+webpackContext.id = 13;
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const req = __webpack_require__(13)
-
-req.keys().forEach((key) => {
-  const name = key.replace(/^\.\/([^.]+)\.js$/, '$1')
-  module.exports[name] = req(key).default
-})
+module.exports = __webpack_require__(15)
 
 
 /***/ }),
-/* 13 */
+/* 15 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_play__ = __webpack_require__(18);
+
+
+
+console.log('play', __WEBPACK_IMPORTED_MODULE_1__components_play__["a" /* default */])
+console.log('components', __WEBPACK_IMPORTED_MODULE_0__components__["a" /* default */])
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  play: __WEBPACK_IMPORTED_MODULE_1__components_play__["a" /* default */],
+  components: __WEBPACK_IMPORTED_MODULE_0__components__["a" /* default */]
+});
+
+/***/ }),
+/* 16 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const req = __webpack_require__(17)
+
+const components = {};
+req.keys().forEach((key) => {
+  const componentName = key.replace(/^.+\/([^/]+)\/index\.vue/, '$1')
+  components[componentName] = req(key);
+})
+
+/* harmony default export */ __webpack_exports__["a"] = (components);
+
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./mainController.js": 14
+	"./Box/index.vue": 4,
+	"./MyButton/index.vue": 5
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -41164,10 +41212,133 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 13;
+webpackContext.id = 17;
 
 /***/ }),
-/* 14 */
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const req = __webpack_require__(19)
+
+const components = {};
+req.keys().forEach((key) => {
+  const componentName = key.replace(/^.+\/([^/]+)\/[a-zA-Z]+\.play.js/, '$1')
+  components[componentName] = req(key);
+})
+
+/* harmony default export */ __webpack_exports__["a"] = (components);
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./Box/index.play.js": 20,
+	"./MyButton/index.play.js": 21
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 19;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+throw new Error("Cannot find module \"vue-play\"");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__index_vue__);
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue_play__["play"](__WEBPACK_IMPORTED_MODULE_1__index_vue__["default"])
+  .name('Box')
+  .displayName('The Box Component')
+  .add('default', '<Box />')
+  .add('dash border', '<Box :dashed="true" />')
+  .add('dotted border', '<Box :dotted="true" />')
+  .add('colorful', '<Box color="pink" />')
+
+
+/***/ }),
+/* 21 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+throw new Error("Cannot find module \"vue\"");
+throw new Error("Cannot find module \"vue-play\"");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__index_vue__);
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('my-button', __WEBPACK_IMPORTED_MODULE_2__index_vue__["default"])
+
+__WEBPACK_IMPORTED_MODULE_1_vue_play__["play"]('Button')
+  .add('with emoji', `<my-button>🤔</my-button>`)
+  .add('colorful', {
+    render(h) {
+      return h(__WEBPACK_IMPORTED_MODULE_2__index_vue__["default"], {
+        props: {color: 'pink'}
+      }, ['hello world'])
+    }
+  })
+  .add('rounded', `<my-button :rounded="true">rounded</my-button>`)
+
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const req = __webpack_require__(23)
+
+req.keys().forEach((key) => {
+  const name = key.replace(/^\.\/([^.]+)\.js$/, '$1')
+  module.exports[name] = req(key).default
+})
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./mainController.js": 24
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 23;
+
+/***/ }),
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

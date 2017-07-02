@@ -13,6 +13,7 @@
     "webpack": "^3.0.0"
   },
   "dependencies": {
-    "ngVue": "^0.4.2"
+    "ngVue": "^0.4.2",
+    "vue-atomic": "0.0.12"
   }
 }
