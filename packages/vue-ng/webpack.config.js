@@ -12,8 +12,12 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
-          loaders: {
-          }
+          loaders: [
+            {
+              test: /\.html$/,
+              loader: 'ngtemplate?relativeTo=' + (path.resolve(__dirname, './app')) + '/!html'
+            }
+          ]
           // other vue-loader options go here
         }
       },

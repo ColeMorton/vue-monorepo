@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "angular": "^1.6.4",
-    "ngVue": "^0.4.2"
+    "angular-route": "^1.6.4",
+    "ngVue": "^0.4.2",
+    "ngtemplate-loader": "^2.0.1"
   }
 }
