@@ -1,6 +1,6 @@
-const req = require.context('.', true, /^((?!index).)*\.js$/)
+const req = require.context('.', true, /^((?!index).)*\.vue$/)
 
 req.keys().forEach((key) => {
-  const name = key.replace(/^\.\/([^.]+)\.js$/, '$1')
-  module.exports[name] = req(key).default
+  const name = key.replace(/^\.\/([^.]+)\.vue$/, '$1')
+  module.exports[name] = req(key)
 })

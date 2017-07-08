@@ -1,6 +1,5 @@
 import 'ngVue'
 import angular from 'angular'
-import helloComponent from './components/helloComponent.js'
 import components from './components'
 import { capitalizeFirstLetter } from './lib'
 
