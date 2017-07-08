@@ -3,6 +3,7 @@ import 'angular-route'
 import vueComponents from './vueComponents'
 import controllers from './controllers'
 import { capitalizeFirstLetter } from './lib'
+import vueTemplate from './templates/vue.html'
 
 angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
 
@@ -59,7 +60,7 @@ Object.keys(controllers).forEach((key) => {
     controller: 'ChapterController'
   })
   .when('/Vue', {
-    templateUrl: 'src/templates/vue.html',
+    template: vueTemplate,
     controller: 'VueController'
   });
 
