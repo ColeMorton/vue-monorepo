@@ -3,18 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Example - example-$route-service-production</title>
-  
-
-  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
-  <script src="//code.angularjs.org/snapshot/angular-route.js"></script>
   <script src="dist/build.js"></script>
-  
-
-  <script type="text/javascript">
-    angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
-  </script>
 </head>
-<body ng-app="ngRouteExample">
+<body ng-app="app">
   <div ng-controller="MainController">
   Choose:
   <a href="Book/Moby">Moby</a> |
@@ -22,6 +13,7 @@
   <a href="Book/Gatsby">Gatsby</a> |
   <a href="Book/Gatsby/ch/4?key=value">Gatsby: Ch4</a> |
   <a href="Book/Scarlet">Scarlet Letter</a><br/>
+  <a href="Vue">Vue Component</a><br/>
 
   <div ng-view></div>
 
