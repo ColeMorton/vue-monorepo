@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import va from 'vue-atomic'
 
+console.log('Vue', Vue)
 console.log('va', va)
 const MyButton = va.components.MyButton
 
