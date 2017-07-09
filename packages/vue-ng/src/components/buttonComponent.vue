@@ -6,12 +6,13 @@
 
 <script>
 import va from 'vue-atomic'
+const { MyButton } = va.components
 export default {
   props: {
     name: String
   },
   components: {
-    'my-button': va.components.MyButton
+    MyButton
   }
 }
 </script>
