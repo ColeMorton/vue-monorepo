@@ -1,7 +1,7 @@
-const controller = () => ({
-  person: {
-    name: 'hybrid',
-  }
-})
+import app from '../app.js'
 
-export default controller
+const controller = () => {}
+
+app
+  .config(($routeProvider) => $routeProvider.when('/', { controller }))
+  .controller('MainController', controller)

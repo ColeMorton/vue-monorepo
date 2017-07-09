@@ -1,13 +1,18 @@
-<vue-component name="HelloComponent"
-  vprops="ctrl.person"
+<h4>Vue Scope</h4>
+<vue-component
+  name="HelloComponent">
+</vue-component>
+
+<h4>Vue-Atomic Scope</h4>
+<vue-component
+  name="ButtonComponent"
+  vprops="model"
   watch-depth="value">
 </vue-component>
-<div class="row">
-  <div class="col s6">
-    <input class="row"
-      type="text"
-      ng-model="ctrl.person.name"
-      placeholder="name"
-      autofocus>
-  </div>
-</div>
+
+<h4>Angular Scope</h4>
+<input class="row"
+  type="text"
+  ng-model="model.name"
+  placeholder="name"
+  autofocus>
