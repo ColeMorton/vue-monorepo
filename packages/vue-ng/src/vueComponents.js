@@ -2,6 +2,7 @@ import 'ngVue'
 import angular from 'angular'
 import components from './components'
 import containers from './containers'
+import './instances'
 
 const MODULE_NAME = 'vue.components'
 

@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import va from 'vue-atomic'
 
 const { Box } = va.components
