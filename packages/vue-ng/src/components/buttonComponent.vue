@@ -1,18 +1,11 @@
-<template>
-  <my-button>
-    {{ name }}
-  </my-button>
-</template>
-
 <script>
 import va from 'vue-atomic'
 const { MyButton } = va.components
 export default {
+  functional: true,
   props: {
     name: String
   },
-  components: {
-    MyButton
-  }
+  render: (h, { props }) => h(MyButton, {}, props.name)
 }
 </script>
