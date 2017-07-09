@@ -1,19 +1,17 @@
 import Vue from 'vue'
 import va from 'vue-atomic'
 
-const Box = va.components.Box
+const { Box } = va.components
 
-export default Vue.component('BoxContainer', {
+export default {
+  functional: true,
   props: {
     color: {
       type: String,
       default: 'green'
     }
   },
-  render (h) {
-    const props = {
-      color: this.color
-    }
-    return h(Box, { props }, this.color);
+  render (h, { props, data }) {
+    return h(Box, { props }, props.color );
   }
-})
+}
