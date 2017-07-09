@@ -1,18 +1,25 @@
 import 'ngVue'
 import angular from 'angular'
 import components from './components'
-import { capitalizeFirstLetter } from './lib'
+import containers from './containers'
 
 const MODULE_NAME = 'vue.components'
 
 angular
   .module(MODULE_NAME, ['ngVue'])
 
-Object.keys(components).forEach((key) => {
-  const name = capitalizeFirstLetter(key)
-  angular
+Object
+  .keys(components)
+  .forEach((key) => angular
     .module(MODULE_NAME)
-    .value(name, components[key])
-})
+    .value(key, components[key])
+)
+
+Object
+  .keys(containers)
+  .forEach((key) => angular
+    .module(MODULE_NAME)
+    .value(key, containers[key].default)
+)
 
 export default 'vue.components'
