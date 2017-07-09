@@ -4,6 +4,9 @@ import template from '../templates/vue.html'
 const controller = ($scope) => {
   $scope.model = {
     name: 'hybrid',
+    firstName: 'Excited',
+    lastName: 'Vue User',
+    color: 'red'
   }
 }
 

@@ -1,6 +1,8 @@
 <h4>Vue Scope</h4>
 <vue-component
-  name="HelloComponent">
+  name="HelloComponent"
+  vprops="model"
+  watch-depth="value">
 </vue-component>
 
 <h4>Vue-Atomic Scope</h4>
@@ -11,7 +13,7 @@
 </vue-component>
 
 <vue-component
-  name="Box"
+  name="BoxContainer"
   vprops="model"
   watch-depth="value">
 </vue-component>
@@ -21,4 +23,16 @@
   type="text"
   ng-model="model.name"
   placeholder="name"
+  autofocus>
+
+<input class="row"
+  type="text"
+  ng-model="model.firstName"
+  placeholder="firstName"
+  autofocus>
+
+<input class="row"
+  type="text"
+  ng-model="model.color"
+  placeholder="green"
   autofocus>
