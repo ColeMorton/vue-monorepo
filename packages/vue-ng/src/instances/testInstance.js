@@ -1,18 +1,9 @@
 import Vue from 'vue'
+import Counter from './Counter.vue'
+import store from '../store'
 
-const vm = new Vue({
+new Vue({
   el: '#instance',
-  template: '<div id="example"><p>Original message: "{{ message }}"</p><p>Computed reversed message: "{{ reversedMessage }}"</p></div>',
-  data: {
-    message: 'Hello'
-  },
-  computed: {
-    // a computed getter
-    reversedMessage: function () {
-      // `this` points to the vm instance
-      return this.message.split('').reverse().join('')
-    }
-  }
+  store,
+  render: h => h(Counter)
 })
-
-export default vm
