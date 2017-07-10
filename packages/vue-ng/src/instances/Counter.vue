@@ -2,7 +2,10 @@
   <Presentation
     :count="count"
     :evenOrOdd="evenOrOdd"
-    @increment="increment">
+    @increment="increment"
+    @decrement="decrement"
+    @incrementIfOdd="incrementIfOdd"
+    @incrementAsync="incrementAsync">
   </Presentation>
 </template>
 

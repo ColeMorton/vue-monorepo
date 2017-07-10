@@ -2,9 +2,9 @@
   <div id="app">
     Clicked: {{ count }} times, count is {{ evenOrOdd }}.
     <button @click="increment">+</button>
-    <!--<button @click="decrement">-</button>
+    <button @click="decrement">-</button>
     <button @click="incrementIfOdd">Increment if odd</button>
-    <button @click="incrementAsync">Increment async</button>-->
+    <button @click="incrementAsync">Increment async</button>
   </div>
 </template>
 
@@ -17,6 +17,15 @@ export default {
   methods: {
     increment() {
       this.$emit('increment')
+    },
+    decrement() {
+      this.$emit('decrement')
+    },
+    incrementIfOdd() {
+      this.$emit('incrementIfOdd')
+    },
+    incrementAsync() {
+      this.$emit('incrementAsync')
     }
   }
 }
