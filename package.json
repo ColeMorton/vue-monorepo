@@ -5,7 +5,7 @@
   "author": "Cole Morton <cole.morton@hotmail.com>",
   "private": true,
   "devDependencies": {
-    "lerna": "^2.0.0-rc.4"
+    "lerna": "^2.5.1"
   },
   "repository": {
     "type": "git",
