@@ -4,6 +4,11 @@
   "version": "0.0.3",
   "author": "Cole Morton <cole.morton@hotmail.com>",
   "private": true,
+  "scripts": {
+    "lerna": "lerna",
+    "postinstall": "lerna bootstrap",
+    "build": "lerna run build"
+  }
   "devDependencies": {
     "lerna": "^2.5.1"
   },
