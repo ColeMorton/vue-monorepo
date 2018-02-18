@@ -1,7 +1,3 @@
-import va from 'vue-atomic'
-
-const { Box } = va.components
-
 export default {
   functional: true,
   props: {
@@ -11,6 +7,6 @@ export default {
     }
   },
   render (h, { props, data }) {
-    return h(Box, { props }, props.color );
+    return h('div', { props }, props.color );
   }
 }

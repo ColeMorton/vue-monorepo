@@ -1,26 +1,37 @@
 {
-  "name": "vue-atomic",
-  "version": "0.0.13",
-  "description": "VueJS app using Atomic Design Methodology",
-  "author": "Cole Morton <cole.morton@hotmail.com>",
-  "main": "index.js",
-  "scripts": {},
-  "license": "MIT",
-  "dependencies": {},
+  "name": "vue-example",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
-    "babel-core": "^6.0.0",
-    "babel-loader": "^6.0.0",
-    "babel-preset-env": "^1.5.1",
-    "cross-env": "^3.0.0",
-    "css-loader": "^0.25.0",
-    "file-loader": "^0.9.0",
-    "vue-loader": "^12.1.0",
-    "vue-template-compiler": "^2.3.3",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/addon-centered": "^3.2.16",
+    "@storybook/addon-knobs": "^3.2.16",
+    "@storybook/addon-links": "^3.2.16",
+    "@storybook/addon-notes": "^3.2.16",
+    "@storybook/addons": "^3.2.16",
+    "@storybook/vue": "^3.2.16",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-vue": "^1.2.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.5",
+    "vue-hot-reload-api": "^2.2.4",
+    "vue-loader": "^13.5.0",
+    "vue-style-loader": "^3.0.1",
+    "vue-template-compiler": "^2.5.8",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ColeMorton/vue-atomic.git"
+  "dependencies": {
+    "vue": "^2.5.8",
+    "vuex": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   }
 }

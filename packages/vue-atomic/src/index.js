@@ -1,10 +1,8 @@
-import components from './components'
-import play from './components/play'
+import Vue from 'vue';
+import App from './App.vue';
 
-console.log('play', play)
-console.log('components', components)
-
-export default {
-  play,
-  components
-}
+// eslint-disable-next-line
+new Vue({
+  el: '#app',
+  render: h => h(App),
+});
