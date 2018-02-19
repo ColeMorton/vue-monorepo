@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="browser.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  </head>
+
+  <body>
+    <h2>Open or Create Local Database</h2>
+    <i>Open a database locally and create it if the database doesn't exist.</i>
+    <br><br>
+    <input id="dbname" type="text" placeholder="Database name"/>
+    <button id="create" type="button" disabled>Open</button>
+
+    <h2>Open Remote Database</h2>
+    <i>Open a database from an OrbitDB address, eg. /orbitdb/QmfY3udPcWUD5NREjrUV351Cia7q4DXNcfyRLJzUPL3wPD/hello</i>
+    <br>
+    <i><b>Note!</b> Open the remote database in an Incognito Window or in a different browser. It won't work if you don't.</i>
+    <br><br>
+    <input id="dbaddress" type="text" placeholder="Address"/>
+    <button id="open" type="button" disabled>Open</button>
+    <br><br>
+    <div id="status">Init</div>
+    <div id="output"></div>
+    <div id="writerText"></div>
+    <br></br>
+    <input id="messageText"></input>
+    <button id="send" type="button">Send</button>
+    <textarea id="output1" rows="10" cols="80"></textarea>
+
+    <script type="text/javascript" src="lib/orbitdb.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="lib/ipfs.js" charset="utf-8"></script>
+    <script type="text/javascript" src="example.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      // Start the example
+      main()
+    </script>
+  </body>
+</html>
