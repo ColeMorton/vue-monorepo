@@ -1,6 +1,6 @@
 {
   "name": "vue-example",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "private": true,
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.16",
