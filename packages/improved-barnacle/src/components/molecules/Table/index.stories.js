@@ -75,3 +75,31 @@ storiesOf('Table', module)
       </tr>
     </Table>
   ))
+  .add('with data', () => {
+    const data = [
+      {
+        id: '1',
+        name: 'jim',
+      },
+      {
+        id: '2',
+        name: 'jane',
+      },
+      {
+        id: '3',
+        name: 'john',
+      },
+    ]
+    return (
+      <Table caption="Hello">
+        {
+          data.map(item => (
+            <tr key={item.id} >
+              <td>{ item.id }</td>
+              <td>{ item.name }</td>
+            </tr>
+          ))
+        }
+      </Table>
+    )
+  })
