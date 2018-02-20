@@ -7,15 +7,15 @@ storiesOf('Spreadsheet', module)
     const data = [
       {
         id: '1',
-        name: 'jim',
+        name: 'Jack',
       },
       {
         id: '2',
-        name: 'jane',
+        name: 'Daniel',
       },
       {
         id: '3',
-        name: 'john',
+        name: 'Sam',
       },
     ]
     return (
